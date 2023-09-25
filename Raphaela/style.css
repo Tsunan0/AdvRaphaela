@@ -49,7 +49,7 @@ html{
 
 header{
     text-align: center;
-    font-size: 25px;
+    font-size: min(2vw, 30px);
     color: white;
     padding: 2% 0 2% 0;
     background-color: rgba(0,0,0,0);
@@ -74,7 +74,7 @@ header a{
 }
 
 #inicial img{
-    width: 40%;
+    width: min(40%, 60vw);
     height: auto;
 }
 
@@ -82,30 +82,29 @@ header a{
 
 #escritorio{
     background-color: rosybrown;
+    display: inline-block;
+    position: relative;
 }
 
-#escritorio-imagem img{
-    width: 37%;
-    height: auto;
-    padding: 4% 5% 4% 7%;
-
+#escritorio img{
+    width: 40%;    
+    padding: 0;
+    vertical-align: top;
 }
 
-#escritorio-texto{
-    float: left;
-    padding: 4% 2% 4% 7%;
-    width: 42%;
-    height: auto;
-}
-
-#escritorio-texto h1{
-    font-size: 50px;
+#escritorio h1{
+    display: inline-block;
+    font-size: 3.5vw;
     font-weight: bold;
+    width: 50%;
+    padding: 6% 2% 2% 4%;
 }
 
-#escritorio-texto p{
-    padding: 2% 2% 2% 0;
-    font-size: 30px;
+#escritorio p{
+    display: inline-block;
+    width: 50%;
+    padding: 2% 2% 6% 4%;
+    font-size: 2vw;
     text-align: justify;
 }
 
@@ -115,7 +114,6 @@ header a{
     background-image: url(sala2.jpg);
     background-size: cover;
     background-position: center center;
-    height: 50%;
     width: 100%;
     color: white;
     text-shadow: 1px 1px 1px gray;
@@ -136,64 +134,64 @@ header a{
 }
 
 #areas h1{
-    font-size: 50px;
+    font-size: 6vw;
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 8% 0 5% 0;
 }
 
 #civil{
-    float: left;
-    padding: 2% 2% 2% 0;
-    font-size: 30px;
-    text-align: justify;
-    padding: 0% 6% 5% 9%;
+    width: 49%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
+    padding: 7% 0% 0 0%;
 }
 
 #civil p{
     text-align: center;
     line-height: 150%;
-    padding: 1% 0 0 0;
+    padding: 2% 0 0 0;
 }
 
 #empresarial{
-    float: left;
-    padding: 2% 2% 2% 0;
-    font-size: 30px;
-    text-align: justify;
-    padding: 0% 6% 5% 6%;
+    padding: 7% 0 0 0;
+    width: 49%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
 }
 
 #empresarial p{
     text-align: center;
-    padding: 1% 0 0 0;
+    padding: 2% 0 8% 0;
     line-height: 150%;
 }
 
 #trabalhista{
-    float: right;
-    padding: 2% 2% 2% 0;
-    font-size: 30px;
-    text-align: justify;
-    padding: 0% 6% 5% 6%;
+    padding: 7% 0 0 0;
+    width: 49%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
 }
 
 #trabalhista p{
     text-align: center;
-    padding: 1% 0 0 0;
+    padding: 2% 0 0 0;
     line-height: 150%;
 }
 
 #penal{
-    float: right;
-    padding: 2% 2% 2% 0;
-    font-size: 30px;
-    text-align: justify;
-    padding: 0% 9% 5% 6%;
+    padding: 7% 0 0 0;
+    width: 49%;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: center;
 }
 
 #penal p{
     text-align: center;
-    padding: 1% 0 0 0;
+    padding: 2% 0 0 0;
     line-height: 150%;
 }
 
@@ -202,66 +200,67 @@ header a{
 #contato{
     background: linear-gradient(to bottom, #633448, black);
     width: 100%;
-    height: 65%;
 }
 
 #contato h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 6vw;
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 1px black;
-    padding: 5% 0 2% 0;
+    padding: 5% 5% 5% 5%;
 }
 
 #contato h3{
     text-align: center;
-    font-size: 40px;
+    font-size: 5vw;
     color: white;
     text-shadow: 1px 1px 1px black;
     padding: 3% 0 3% 0;
 }
 
 #telefone{
-    float: left;
-    width: 39%;
+    display: inline-block;
+    width: 49%;
     height: auto;
-    padding: 3% 0 0 11%;
+    padding: 0;
     text-align: center;
+    padding: 8% 0 10% 0;
 }
 
 #telefone-imagem2{
-    width: 150px;
-    height: 150px;
+    width: 28vw;
+    height: 28vw;
 }
 
 #telefone-link{
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 1px black;
-    font-size: 35px;
-    padding: 0 0 3% 0;
+    font-size: 3vw;
+    padding: 0;
 }
 
 #wpp{
-    float: right;
-    width: 39%;
+    display: inline-block;
+    width: 49%;
     height: auto;
-    padding: 3% 11% 0 0;
+    padding: 0;
     text-align: center;
+    padding: 8% 0 10% 0;
 }
 
 #wpp-imagem2{
-    width: 150px;
-    height: 150px;
+    width: 28vw;
+    height: 28vw;
 }
 
 #wpp-link{
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 1px black;
-    font-size: 35px;
-    padding: 0 0 3% 0;
+    font-size: 3vw;
+    padding: 0;
 }
 
 /* Rodapé */
@@ -273,7 +272,7 @@ footer{
 footer p{
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 2vw;
     text-shadow: 1px 1px 1px black;
     padding: 1% 0 1% 0%;
 }
@@ -282,60 +281,77 @@ footer p{
 
 /* Celulares */
 
-@media (max-width: 460px) {
-    header {
-        font-size: 10px;
-    }
-
-    #inicial img{
-        width: 70%;
-        height: auto;
-    }
-
-}
-
-@media (max-width: 420px) {
-    header {
-        font-size: 9px;
-    }
-
-    #inicial img{
-        width: 70%;
-        height: auto;
-    }
-
-}
-
-@media (max-width: 375px) {
-    header {
-        font-size: 8px;
-    }
-
-    #inicial img{
-        width: 70%;
-        height: auto;
-    }
-
-}
-
-@media (max-width: 330px) {
-    header {
-        font-size: 7px;
-    }
-
-    #inicial img{
-        width: 70%;
-        height: auto;
-    }
+@media (max-width: 90000px) {
 
 }
 
 /* Tablets */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 500px) and (max-width: 2048px) {
 }
 
 /* Orientação horizontal */
 
 @media (orientation: landscape) {
+    #escritorio p{
+        font-size: 1.5vw;
+    }
+
+    #areas h1{
+        font-size: 5vw;
+        text-align: center;
+        padding: 8% 0 5% 0;
+    }
+    
+    #civil{
+        width: 49%;
+        display: inline-block;
+        font-size: 2vw;
+        text-align: center;
+        padding: 7% 0% 0 0%;
+    }
+    
+    #empresarial{
+        padding: 7% 0 0 0;
+        width: 49%;
+        display: inline-block;
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    #trabalhista{
+        padding: 7% 0 0 0;
+        width: 49%;
+        display: inline-block;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #penal{
+        padding: 7% 0 0 0;
+        width: 49%;
+        display: inline-block;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #contato h1{
+        font-size: 4vw;
+    }
+    
+    #contato h3{
+        font-size: 3vw;
+    }
+
+    #telefone-imagem2{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #wpp-imagem2{
+        width: 15vw;
+        height: 15vw;
+    }
+
+
 }
