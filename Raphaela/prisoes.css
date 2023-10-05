@@ -1,0 +1,377 @@
+/* Zerar padrões */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Adiciona a rolagem suave às âncoras */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Container */
+
+#container{
+    background-color: slategray;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    text-align: center;
+    font-size: min(1.8vw, 30px);
+    color: white;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav a{
+    padding: 1% 0 1% 0;
+    margin: 2% 2% 2% 2%;
+    width: 16%;
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav a:hover{
+    background-color: burlywood;
+    border-radius: 15px;
+}
+
+nav img{
+    width: 30%;
+    padding-left: 10%;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+    background-image: url("prisão2.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 7%;
+    font-size: 4vw;
+    padding-bottom: 7%;
+    text-shadow: 2px 2px 2px black;
+}
+
+header h1::after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.6;
+        z-index: -1;
+}
+
+/* Corpo */
+
+/* Menu */
+
+main{
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+#menu{
+    margin-top: 2%;
+    padding: 5% 1% 5% 1%;
+    border-right: 0.5vw double #00CED1;
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    align-self: flex-start;
+    top: 25%;
+}
+
+#menu a{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    width: 100%;
+    line-height: 200%;
+}
+
+/* Texto */
+
+#texto {
+    padding: 5% 9% 5% 2%;
+    width: 48%;
+    height: auto;
+}
+
+#texto h3{
+    font-size: 2vw;
+    padding: 5%;
+}
+
+#texto h4{
+    font-size: 1.7vw;
+    padding: 3%;
+}
+
+#texto p{
+    font-size: 1.5vw;
+    line-height: 150%;
+    padding-bottom: 8%;
+}
+
+#prisões {
+    text-decoration: none;
+    color: rgb(230, 160, 70);
+    font-size: 1.4vw;
+}
+
+#prisões2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2% 0 3%;
+    background-color: wheat;
+    text-decoration: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 1vw;
+}
+
+#prisões2 img{
+    width: 80%;
+    height: auto;
+}
+
+#prisões2 a:first-of-type{
+    width:  14%;
+    height: auto;
+}
+
+#prisões2 a{
+    width: 80%;
+    height: auto;
+}
+
+#ícones{
+    width: 4%;
+    height: auto;
+    margin-top: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    align-self: flex-start;
+    top: 30%;
+    margin-bottom: 5%;
+}
+
+#ícones img {
+    padding-top: 50%;
+    width: 70%;
+    height: auto;
+}
+
+#contato{
+    background: linear-gradient(navy, navy, navy, navy, black);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5%;
+    color: whitesmoke;
+}
+
+#contato h1{
+    padding-bottom: 5%;
+    font-size: 2.5vw;
+}
+
+#contato a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+
+#contato img{
+    width: 10%;
+    height: auto;
+    padding-top: 3%;
+}
+
+#contato1{
+    padding: 3% 5% 3% 5%;
+    width: 39%;
+    border-right: 0.5vw double goldenrod;
+}
+
+#contato p{
+    padding: 5%;
+    font-size: 1.5vw;
+    line-height: 200%;
+}
+
+#localização{
+    padding: 3% 5% 3% 5%;
+    width: 40%;
+}
+
+#localização iframe{
+    width: 100%;
+    height: 25vw;
+}
+
+#mapa{
+    margin: 5%;
+    width: 90%;
+}
+
+footer{
+    padding: 1%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1vw;
+}
+
+@media (orientation: landscape) {
+
+    #contato{
+        background: linear-gradient(MidnightBlue, MidnightBlue, MidnightBlue, MidnightBlue, black);
+    }
+}
+
+
+@media (orientation: portrait) {
+    nav a{
+        padding: 1% 0 1% 0;
+        margin: 2% 2% 2% 2%;
+        width: 16%;
+        font-size: 2.1vw;
+        text-decoration: none;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    nav img{
+        padding-left: 8%;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+
+    #menu a{
+        font-size: 2.5vw;
+    }
+
+    #texto h3{
+        font-size: 3.5vw;
+        padding-bottom: 10%;
+    }
+
+    #texto h4{
+        font-size: 3vw;
+        padding: 3%;
+    }
+    
+    #texto p{
+        font-size: 2.5vw;
+    }
+    
+    #prisões {
+        font-size: 2.5vw;
+    }
+    
+    #prisões2{
+        font-size: 1.4vw;
+        padding: 0 5% 0 5%;
+    }
+
+    #prisões2 a:first-of-type{
+        width:  12%;
+        height: auto;
+    }
+    
+    #prisões2 a{
+        width: 78%;
+        height: auto;
+    }
+
+    #ícones img {
+        padding-top: 50%;
+        width: 100%;
+        height: auto;
+    }
+    
+    #contato h1{
+        padding-bottom: 5%;
+        padding-top: 5%;
+        font-size: 3vw;
+    }
+    
+    #contato img{
+        width: 10%;
+        height: auto;
+        padding-top: 3%;
+    }
+    
+    #contato1{
+        padding: 3% 5% 3% 5%;
+        width: 100%;
+        border-bottom: 0.5vw double goldenrod;
+    }
+    
+    #contato p{
+        font-size: 2.5vw;
+    }
+
+    #localização{
+        padding: 3% 5% 3% 5%;
+        width: 100%;
+    }
+    
+    #localização iframe{
+        width: 100%;
+        height: 35vw;
+    }
+    
+    #mapa{
+        margin: 5%;
+        width: 90%;
+    }
+
+}

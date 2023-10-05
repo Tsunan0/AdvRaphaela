@@ -1,0 +1,479 @@
+/* Zerar padrões */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Adiciona a rolagem suave às âncoras */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Container */
+
+#container{
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Container inicial */
+
+#container-inicial{ 
+    background-image: url(sala.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+#container-inicial::after{ /* Torna o BG de container-inicial opaco */
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Cabeçalho */
+
+header{
+    text-align: center;
+    font-size: min(1.8vw, 30px);
+    color: white;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+header a{
+    padding: 1% 0 1% 0;
+    margin: 1% 2% 0% 2%;
+    width: 21%;
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    background-color: rosybrown;
+    border-radius: 15px;
+}
+
+/* Corpo */
+
+/* Parte Inicial */
+
+#inicial{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+}
+
+#inicial img{
+    width: 60%;
+    height: auto;
+}
+
+/* Parte 2 - Escritório */
+
+#escritorio{
+    background-color: rosybrown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#escritorio h1{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: bold;
+    width: 100%;
+    padding: 3% 0 3% 0;
+}
+
+#escritorio p{
+    width: 52%;
+    padding: 0 2% 3% 5%;
+    font-size: 2vw;
+    text-align: justify;
+}
+
+#escritorio img{
+    padding: 0 5% 3% 2%;
+    width: 32%;    
+    padding: 0;
+}
+
+/* Áreas de atuação */
+
+#areas{ 
+    background-image: url(sala2.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 5% 0;
+}
+
+#areas::after{ /* Torna o BG de areas opaco */
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#areas h1{
+    width: 100%;
+    font-size: 5vw;
+    padding: 10% 0 3% 0;
+}
+
+#areas h3{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 3vw;
+}
+
+#areas p{
+    line-height: 150%;
+}
+
+#areas a{
+    text-decoration: none;
+    color: white;
+    line-height: 150%;
+}
+
+#civil{
+    padding: 4% 0 0 3%;
+    width: 47%;
+    font-size: 2vw;
+}
+
+#empresarial{
+    padding: 4% 3% 0 0;
+    width: 47%;
+    font-size: 2vw;
+}
+
+#trabalhista{
+    padding: 4% 0 0 3%;
+    width: 47%;
+    font-size: 2vw;
+}
+
+#penal{
+    padding: 4% 3% 0 0;
+    width: 47%;
+    font-size: 2vw;
+}
+
+/* Sócios */
+
+#socios{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(black, sienna, sienna, sienna, #633448);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+#socios h1{
+    width: 100%;
+    font-size: 4vw;
+    padding: 12% 0 8% 0;
+}
+
+#socios h2{
+    padding: 3%;
+    font-size: 2vw;
+    text-shadow: 1px 1px 1px black;
+}
+
+#socios p{
+    padding: 3% 6% 3% 6%;
+    font-size: 1.5vw;
+}
+
+#socios img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+#raphaela{
+    padding-left: 7%;
+    padding-bottom: 5%;
+    width: 43%;
+    height: auto;
+}
+
+#brendon{
+    padding-right: 7%;
+    padding-bottom: 5%;
+    width: 43%;
+    height: auto;
+}
+
+/* Contato */
+
+#contato{
+    background: linear-gradient(to bottom, #633448, black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contato h1{
+    text-align: center;
+    width: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 5% 15% 5% 15%;
+}
+
+#contato h3{
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 3% 0 3% 0;
+}
+
+#telefone{
+    width: 30%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    padding: 5% 0 8% 0%;
+}
+
+#telefone-imagem2{
+    width: 10vw;
+    height: 10vw;
+}
+
+#telefone-link{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5vw;
+    padding: 0;
+}
+
+#email{
+    width: 30%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    padding: 5% 0 8% 0%;
+}
+
+#email-imagem2{
+    width: 10vw;
+    height: 10vw;
+}
+
+#email-link{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5vw;
+    padding: 0;
+}
+
+#wpp{
+    width: 30%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    padding: 5% 0 8% 0%;
+}
+
+#wpp-imagem2{
+    width: 10vw;
+    height: 10vw;
+}
+
+#wpp-link{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5vw;
+    padding: 0;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    text-shadow: 1px 1px 1px black;
+    padding: 1% 0 1% 0%;
+}
+
+/* Responsividade */
+
+/* Celulares */
+
+@media (max-width: 300px) {
+    
+}
+
+/* Tablets */
+
+@media (min-width: 500px) and (max-width: 2048px) {
+}
+
+/* Orientação horizontal */
+
+@media (orientation: landscape) {
+
+}
+
+@media (orientation: portrait) {
+    #inicial img{
+        width: 90%;
+        height: auto;
+    }
+
+    header a{
+        margin: 5% 1.5% 0% 1.5%;
+        width: 22%;
+        font-size: 3vw;
+    }
+
+    #escritorio h1{
+        font-size: 5vw;
+    }
+
+    #escritorio p{
+        width: 100%;
+        padding: 0 6% 4% 6%;
+        font-size: 3vw;
+    }
+    
+    #escritorio img{
+        padding: 5% 2% 5% 2%;
+        width: 60%;
+    }
+
+    #areas h1{
+        font-size: 5.5vw;
+        padding-bottom: 7%;
+
+    }
+
+    #areas h3{
+        font-size: 4.5vw;
+        padding-bottom: 10%;
+    }
+
+    #areas p{
+        padding-bottom: 10%;
+    }
+
+    #civil{
+        font-size: 2.5vw;
+    }
+    
+    #empresarial{
+        font-size: 2.5vw;
+    }
+    
+    #trabalhista{
+        font-size: 2.5vw;
+    }
+    
+    #penal{
+        font-size: 2.5vw;
+    }
+
+    #socios h1{
+        width: 100%;
+        font-size: 5vw;
+        padding: 12%;
+    }
+    
+    #socios h2{
+        padding: 3%;
+        font-size: 2.6vw;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    #socios p{
+        padding: 3% 6% 3% 6%;
+        font-size: 2.2vw;
+    }
+    
+    #socios img{
+        width: 18vw;
+        height: 18vw;
+        border-radius: 50%;
+    }
+
+    #raphaela{
+        padding-left: 3%;
+        width: 47%;
+    }
+    
+    #brendon{
+        padding-right: 3%;
+        width: 47%;
+    }
+    
+    #telefone-imagem2{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #wpp-imagem2{
+        width: 8vw;
+        height: 8vw;
+    }
+}
